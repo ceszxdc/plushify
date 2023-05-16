@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plushify | Sanrio Plush Toy Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="website icon" type="png" href="images/plushify.png">
+    <script src="cart.js"></script>
+</head>
+<body>
+    
+    <div class="header1" id="Top">
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#BestSeller">Products</a></li>
+                    <li><a href="index.html#Account">Account</a></li>
+                </ul>   
+            </nav>
+                <a href="cart1.html"><img src="images/cart.png" width="25px" height="25px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+        </div>
+
+
+    <main>
+    <div class="container2"> 
+   <div id="alerts"></div>
+        <div class="cart-container">
+          <h2>Cart</h2>
+          <table>
+            <thead>
+              <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+            </thead>
+            <tbody id="carttable">
+            </tbody>
+          </table>
+          <hr>
+          <table id="carttotals">
+            <tr>
+              <td><strong>Items</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity">0</span></td>
+             
+              <td>$<span id="total">0</span></td>
+            </tr></table>
+
+            
+          <div class="cart-buttons">  
+            <button id="emptycart">Empty Cart</button>
+            <button id="checkout" onclick="checkout()">Checkout</button>
+          </div>
+        </div>
+        <br>
+        <div class="productcont">
+            <div class="product">
+                <h3 class="productname">Hello Kitty 17" Plushy</h3>
+                <a><img src="images/hellokitty1.png"></a>
+                <p class="price">$6.20</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">My Melody 17" Plushy</h3>
+                <a><img src="images/mymelody1.png"></a>
+                <p class="price">$6.20</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Kuromi 17" Plushy</h3>
+                <a><img src="images/kuromi1.png"></a>
+                <p class="price">$6.20</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Cinnamoroll 17" Plushy</h3>
+                <a><img src="images/cinnamoroll1.png"></a>
+                <p class="price">$6.20</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+        </div>
+        <div class="productcont">
+            <div class="product">
+                <h3 class="productname">Pompompurin 17" Plushy</h3>
+                <a><img src="images/pompompurin1.png"></a>
+                <p class="price">$6.20</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Keroppi 17" Plushy</h3>
+                <a><img src="images/keroppi1.png"></a>
+                <p class="price">$6.20</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Pochacco 17" Plushy</h3>
+                <a><img src="images/pochacco1.png"></a>
+                <p class="price">$6.20</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Badtz-maru 17" Plushy</h3>
+                <a><img src="images/badtz-maru1.png"></a>
+                <p class="price">$6.20</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+        </div>
+        <div class="productcont">
+            <div class="product">
+                <h3 class="productname">Tuxedosam 17" Plushy</h3>
+                <a><img src="images/tuxedosam1.png"></a>
+                <p class="price">$6.20</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Gudetama 10" Plushy</h3>
+                <a><img src="images/gudetama1.png"></a>
+                <p class="price">$5.15</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Pekkle<br> 10" Plushy</h3>
+                <a><img src="images/pekkle1.png"></a>
+                <p class="price">$5.15</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Aggretsuko 10" Plushy</h3>
+                <a><img src="images/aggretsuko1.png"></a>
+                <p class="price">$5.15</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+        </div>
+        <div class="productcont">
+            <div class="product">
+                <h3 class="productname">My Sweet Piano 10" Plushy</h3>
+                <a><img src="images/mysweetpiano1.png"></a>
+                <p class="price">$4.40</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Hangyodon 10" Plushy</h3>
+                <a><img src="images/hangyodon1.png"></a>
+                <p class="price">$4.40</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Lala<br>8" Plushy</h3>
+                <a><img src="images/lalababy1.png"></a>
+                <p class="price">$3.70</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Kiki<br>8" Plushy</h3>
+                <a><img src="images/kikibaby1.png"></a>
+                <p class="price">$3.70</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+        </div>
+
+      </div>
+  </main>   
+</div>
+
+<!----- cart js ----->
+
+<script>
+    updateCartTotal();
+
+document.getElementById("emptycart").addEventListener("click", emptyCart);
+var btns = document.getElementsByClassName('addtocart');
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function() {addToCart(this);});
+}
+
+
+function addToCart(elem) {
+
+    var sibs = [];
+    var getprice;
+    var getproductName;
+    var cart = [];
+     var stringCart;
+    while(elem = elem.previousSibling) {
+        if (elem.nodeType === 3) continue; 
+        if(elem.className == "price"){
+            getprice = elem.innerText;
+        }
+        if (elem.className == "productname") {
+            getproductName = elem.innerText;
+        }
+        sibs.push(elem);
+    }
+    var product = {
+        productname : getproductName,
+        price : getprice
+    };
+    var stringProduct = JSON.stringify(product);
+    
+    if(!sessionStorage.getItem('cart')){
+        cart.push(stringProduct);
+        stringCart = JSON.stringify(cart);
+        sessionStorage.setItem('cart', stringCart);
+        addedToCart(getproductName);
+        updateCartTotal();
+    }
+    else {
+       cart = JSON.parse(sessionStorage.getItem('cart'));
+        cart.push(stringProduct);
+        stringCart = JSON.stringify(cart);
+        sessionStorage.setItem('cart', stringCart);
+        addedToCart(getproductName);
+        updateCartTotal();
+    }
+}
+function updateCartTotal(){
+    var total = 0;
+    var price = 0;
+    var items = 0;
+    var productname = "";
+    var carttable = "";
+    if(sessionStorage.getItem('cart')) {
+        var cart = JSON.parse(sessionStorage.getItem('cart'));
+        items = cart.length;
+        for (var i = 0; i < items; i++){
+            var x = JSON.parse(cart[i]);
+            price = parseFloat(x.price.split('$')[1]);
+            productname = x.productname;
+            carttable += "<tr><td>" + productname + "</td><td>$" + price.toFixed(2) + "</td></tr>";
+            total += price;
+        }
+        
+    }
+    document.getElementById("total").innerHTML = total.toFixed(2);
+    document.getElementById("carttable").innerHTML = carttable;
+    document.getElementById("itemsquantity").innerHTML = items;
+}
+function addedToCart(pname) {
+  var message = pname + " was added to the cart";
+  var alerts = document.getElementById("alerts");
+  alerts.innerHTML = message;
+  if(!alerts.classList.contains("message")){
+     alerts.classList.add("message");
+  }
+}
+function emptyCart() {
+    if(sessionStorage.getItem('cart')){
+        sessionStorage.removeItem('cart');
+        updateCartTotal();
+      var alerts = document.getElementById("alerts");
+      alerts.innerHTML = "";
+      if(alerts.classList.contains("message")){
+          alerts.classList.remove("message");
+      }
+    }
+}
+function checkout() {
+    var cart = JSON.parse(sessionStorage.getItem('cart'));
+    if (cart && cart.length > 0) {
+        alert("Thank you for your purchase!");
+        // Additional logic or actions for checkout
+    } else {
+        alert("No item to purchase.");
+    }
+}
+</script>
+
+<!----- footer ----->
+     
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Now available on IOS and Andriod mobile phones.</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store/apps" tabIndex="0"><img class="bn45" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="bn45"/></a>
+                    <a href="https://www.apple.com/ph/app-store/" tabIndex="0"><img class="bn46" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"alt="bn45"/></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html"><img src="images/logo-white.png"></a>
+                <p>Our purpose is to spread happiness through cute, high-quality Sanrio products.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li> 
+                        <li>YouTube</li>
+                    </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - Princess Luna</p>
+    </div>
+    <a2 href="index.html" id="button"><i class="fas fa-circle-up"></i></a2>
+
+    <script>
+        const button = document.getElementById("button");
+      
+        button.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      </script>
+
+</div>
+
+
+<!----- toggle menu ----->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+    }
+</script>
+
+</body>
+</html>
